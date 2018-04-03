@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/../depot/.idea/depot.iml" filepath="$PROJECT_DIR$/../depot/.idea/depot.iml" />
+      <module fileurl="file://$USER_HOME$/VKProject/vk-contest/.idea/vk-contest.iml" filepath="$USER_HOME$/VKProject/vk-contest/.idea/vk-contest.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/vk_contest_on_rails.iml" filepath="$PROJECT_DIR$/.idea/vk_contest_on_rails.iml" />
+    </modules>
+  </component>
+</project>

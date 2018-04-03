@@ -1,0 +1,39 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Purse:</strong>
+  <%= @order.purse %>
+</p>
+
+<p>
+  <strong>Status:</strong>
+  <%= @order.status %>
+</p>
+
+<p>
+  <strong>Descr:</strong>
+  <%= @order.descr %>
+</p>
+
+<p>
+  <strong>Comment txt:</strong>
+  <%= @order.comment_txt %>
+</p>
+
+<p>
+  <strong>Create date:</strong>
+  <%= @order.create_date %>
+</p>
+
+<p>
+  <strong>Start date:</strong>
+  <%= @order.start_date %>
+</p>
+
+<p>
+  <strong>End date:</strong>
+  <%= @order.end_date %>
+</p>
+
+<%= link_to 'Edit', edit_order_path(@order) %> |
+<%= link_to 'Back', orders_path %>

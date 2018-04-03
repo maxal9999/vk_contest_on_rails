@@ -1,0 +1,39 @@
+@main-theme-color: #3C3E4A;
+@accent-theme-color: #D0554E;
+@error-color: #ec3c3c;
+@blue-color: #1e76c3;
+@done-color: #008e14;
+
+body {
+   margin: 0;
+   font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+}
+
+a {
+   text-decoration: none;
+   &:hover {
+      color: @accent-theme-color;
+
+      &:visited {
+         color: @accent-theme-color;
+      }
+   }
+}
+
+.ReactModal {
+   &__Overlay {
+      background-color: initial !important;
+      display: flex;
+   }
+   &__Body--open {
+      & #app {
+         filter: blur(4px);
+      }
+   }
+}
+
+.text--ellipsis {
+   text-overflow: ellipsis;
+   overflow: hidden;
+   white-space: nowrap;
+}

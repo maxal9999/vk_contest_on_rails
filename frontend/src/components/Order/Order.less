@@ -1,0 +1,61 @@
+@import url('../../index.less');
+
+.Order {
+   width: 60vw;
+   max-height: 70vh;
+   display: flex;
+   flex-direction: column;
+
+   &__head {
+      display: flex;
+      font-size: 30px;
+      justify-content: space-between;
+   }
+   &__body {
+      margin-top: 16px;
+      text-align: right;
+   }
+   &__description {
+      text-align: left;
+   }
+   &__bottom-area {
+      flex: 1 1 auto;
+      display: flex;
+      font-size: 23px;
+
+      > * {
+         margin: auto auto 0 auto;
+      }
+   }
+   &__comment {
+      margin-top: 24px;
+      text-align: start;
+   }
+   &__comment-caption {
+      font-style: oblique;
+   }
+   &__executor-area {
+      display: inline-flex;
+      text-align: right;
+      margin-top: 16px;
+   }
+   &__executor-name {
+      margin-left: 12px;
+   }
+   &__comment-value {
+      margin-top: 16px;
+   }
+   &__done-area {
+      display: flex;
+      margin-top: 16px;
+   }
+   &__done-caption {
+      margin-left: 8px;
+   }
+   &--in-work {
+      color: @blue-color;
+   }
+   &--done {
+      color: @done-color;
+   }
+}

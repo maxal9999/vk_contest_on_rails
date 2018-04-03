@@ -1,0 +1,60 @@
+@import '../../index.less';
+
+.App {
+   display: flex;
+   flex-direction: column;
+   align-items: stretch;
+   height: 100vh;
+   transition: filter .5s;
+
+   &__head {
+      height: 65px;
+      background-color: @main-theme-color;
+      display: flex;
+      justify-content: space-between;
+      flex-shrink: 0;
+      position: fixed;
+      width: 100%;
+      z-index: 1;
+   }
+   &__title {
+      font-size: 30px;
+      margin: auto 0 auto 16px;
+
+      a {
+         color: #fff;
+
+         &:hover {
+            color: #fff;
+         }
+      }
+   }
+   &__head-widget {
+      display: flex;
+      margin: auto 16px auto 0;
+      color: #fff;
+   }
+   &__body {
+      display: flex;
+      flex: 1 1 auto;
+      margin-top: 65px;
+
+      > * {
+         margin: 15vh auto 0 auto;
+      }
+   }
+   &__trobber {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      font-size: 40px;
+   }
+   &--blur {
+      filter: blur(4px);
+   }
+   &--fullsize-content {
+      margin: 0;
+      height: 100%;
+      width: 100%;
+   }
+}

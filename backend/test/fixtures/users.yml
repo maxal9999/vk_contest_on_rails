@@ -1,0 +1,13 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  purse: 9.99
+  status: false
+  login: MyString
+  password: MyString
+
+two:
+  purse: 9.99
+  status: false
+  login: MyString
+  password: MyString

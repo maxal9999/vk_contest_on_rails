@@ -1,0 +1,52 @@
+<%= form_with(model: order, local: true) do |form| %>
+  <% if order.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(order.errors.count, "error") %> prohibited this order from being saved:</h2>
+
+      <ul>
+      <% order.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= form.label :purse %>
+    <%= form.text_field :purse, id: :order_purse %>
+  </div>
+
+  <div class="field">
+    <%= form.label :status %>
+    <%= form.text_field :status, id: :order_status %>
+  </div>
+
+  <div class="field">
+    <%= form.label :descr %>
+    <%= form.text_field :descr, id: :order_descr %>
+  </div>
+
+  <div class="field">
+    <%= form.label :comment_txt %>
+    <%= form.text_field :comment_txt, id: :order_comment_txt %>
+  </div>
+
+  <div class="field">
+    <%= form.label :create_date %>
+    <%= form.datetime_select :create_date, id: :order_create_date %>
+  </div>
+
+  <div class="field">
+    <%= form.label :start_date %>
+    <%= form.datetime_select :start_date, id: :order_start_date %>
+  </div>
+
+  <div class="field">
+    <%= form.label :end_date %>
+    <%= form.datetime_select :end_date, id: :order_end_date %>
+  </div>
+
+  <div class="actions">
+    <%= form.submit %>
+  </div>
+<% end %>

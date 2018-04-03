@@ -1,0 +1,25 @@
+@import url('../../index.less');
+
+.Button {
+   cursor: pointer;
+   border: none;
+   background-color: inherit;
+   font-size: inherit;
+   color: inherit;
+   padding: 0;
+   cursor: pointer;
+
+   &:hover {
+      color: @accent-theme-color;
+   }
+   &:focus {
+      outline: none;
+   }
+   &--primary {
+      color: @accent-theme-color;
+
+      &:hover {
+         color: darken(@accent-theme-color, 20%);
+      }
+   }
+}
